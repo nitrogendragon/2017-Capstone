@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: aac1c0d6469205946ab948f1617c5ac0
+timeCreated: 1505523561
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - bgImage: {instanceID: 0}
+  - fgImage: {fileID: 2800000, guid: 75bf0becbdf903e498ddf560424e64ed, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

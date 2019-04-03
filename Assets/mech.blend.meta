@@ -1,0 +1,284 @@
+fileFormatVersion: 2
+guid: 4608d335d34ebe647a9b60cee4c465ec
+timeCreated: 1506389204
+licenseType: Free
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: Armature_001
+    100002: Bone
+    100004: Bone_001
+    100006: Bone_001_L
+    100008: Bone_001_R
+    100010: Bone_002
+    100012: Bone_003
+    100014: Bone_L
+    100016: Bone_L_004
+    100018: Bone_L_005
+    100020: Bone_L_006
+    100022: Bone_L_007
+    100024: Bone_L_008
+    100026: Bone_L_009
+    100028: Bone_L_010
+    100030: Bone_L_011
+    100032: Bone_R
+    100034: Bone_R_004
+    100036: Bone_R_005
+    100038: Bone_R_006
+    100040: Bone_R_007
+    100042: Bone_R_008
+    100044: Bone_R_009
+    100046: Bone_R_010
+    100048: Bone_R_011
+    100050: Extra_Guns_Bone
+    100052: Feet_L
+    100054: Feet_R
+    100056: Guns_Controlling_Bone
+    100058: Lower_Legs_L
+    100060: Lower_Legs_R
+    100062: MainBody
+    100064: //RootNode
+    100066: mech_torso
+    100068: pole_tar_l_
+    100070: pole_tar_r
+    100072: Toes_L_L
+    100074: Toes_L_R
+    100076: Toes_R_L
+    100078: Toes_R_R
+    100080: Turrets
+    100082: UpperLeg1r
+    100084: UpperLeg2l
+    400000: Armature_001
+    400002: Bone
+    400004: Bone_001
+    400006: Bone_001_L
+    400008: Bone_001_R
+    400010: Bone_002
+    400012: Bone_003
+    400014: Bone_L
+    400016: Bone_L_004
+    400018: Bone_L_005
+    400020: Bone_L_006
+    400022: Bone_L_007
+    400024: Bone_L_008
+    400026: Bone_L_009
+    400028: Bone_L_010
+    400030: Bone_L_011
+    400032: Bone_R
+    400034: Bone_R_004
+    400036: Bone_R_005
+    400038: Bone_R_006
+    400040: Bone_R_007
+    400042: Bone_R_008
+    400044: Bone_R_009
+    400046: Bone_R_010
+    400048: Bone_R_011
+    400050: Extra_Guns_Bone
+    400052: Feet_L
+    400054: Feet_R
+    400056: Guns_Controlling_Bone
+    400058: Lower_Legs_L
+    400060: Lower_Legs_R
+    400062: MainBody
+    400064: //RootNode
+    400066: mech_torso
+    400068: pole_tar_l_
+    400070: pole_tar_r
+    400072: Toes_L_L
+    400074: Toes_L_R
+    400076: Toes_R_L
+    400078: Toes_R_R
+    400080: Turrets
+    400082: UpperLeg1r
+    400084: UpperLeg2l
+    4300000: Feet_L
+    4300002: Feet_R
+    4300004: Lower_Legs_L
+    4300006: Lower_Legs_R
+    4300008: MainBody
+    4300010: mech_torso
+    4300012: Toes_L_L
+    4300014: Toes_L_R
+    4300016: Toes_R_L
+    4300018: Toes_R_R
+    4300020: Turrets
+    4300022: UpperLeg1r
+    4300024: UpperLeg2l
+    7400000: Default Take
+    7400002: RunningForward
+    7400004: Run
+    7400006: Stationary
+    7400008: Run (1)
+    9500000: //RootNode
+    13700000: Feet_L
+    13700002: Feet_R
+    13700004: Lower_Legs_L
+    13700006: Lower_Legs_R
+    13700008: MainBody
+    13700010: mech_torso
+    13700012: Toes_L_L
+    13700014: Toes_L_R
+    13700016: Toes_R_L
+    13700018: Toes_R_R
+    13700020: Turrets
+    13700022: UpperLeg1r
+    13700024: UpperLeg2l
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 1
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Stationary
+      takeName: Armature_001Action
+      firstFrame: -1
+      lastFrame: -1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: RunningForward
+      takeName: Armature_001Action
+      firstFrame: 0
+      lastFrame: 76
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Run
+      takeName: Run
+      firstFrame: 0
+      lastFrame: 19
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 4
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: Armature_001
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

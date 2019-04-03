@@ -1,0 +1,162 @@
+    float phoenixtearrange = 19;
+    float phoenixtearmultiplier = 1.5;
+    bool phoenixtearselected;
+	bool phoenixtearbuffactive;
+	bool ptbuffmech;
+	bool ptbuffswordsman;
+	bool ptbuffhealer;
+	bool ptbuffcubewarrior;
+    void PhoenixTear()
+    {
+
+
+        if (Input.GetKeyUp(KeyCode.Alpha5) && sootheselected == false && Sliders[4].value == Sliders[4].maxValue && hstats.isDead == false)
+        {
+            cleanboard();
+            stormselected = false;
+            alphablazeselected = false;
+            dragonrageselected = false;
+            
+           /**blessselected = false;
+           hiddenbladeselected = false;
+           fullstrikeselected = false;
+           focusedswordselected = false;
+           enrageselected = false;
+           rageselected = false;
+           terrorselected = false ;**/
+            sootheselected = false;
+			phoenixtearselected = true;
+        }
+        else if (Input.GetKeyUp(KeyCode.Alpha5))
+        {
+            phoenixtearselected = false;
+        }
+        if (phoenixtearselected == true && hstats.isDead == false)
+        {
+
+            RaycastHit hit;
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+
+            for (int i = 0; i < Mathf.Sqrt(gridscript.grid.Length); i++)
+            {
+                for (int z = 0; z < Mathf.Sqrt(gridscript.grid.Length); z++)
+                {
+                    if (Physics.Raycast(ray, out hit, 4000) && hit.collider.gameObject == gridscript.grid[i, z])
+
+
+                    {
+
+                        gridposition = gridscript.grid[i, z].transform.position;
+
+                    }
+                }
+            }
+            for (int d = 0; d < Enemies.Count; d++)
+            {
+                if (Physics.Raycast(ray, out hit, 4000) && hit.collider.gameObject == Heroes[d])
+                {
+                    gridposition = Heroes[d].transform.position;
+
+                }
+            }
+            gridp.Add(gridposition);
+
+            for (int c = 0; c < Mathf.Sqrt(gridscript.grid.Length); c++)
+            {
+                for (int b = 0; b < Mathf.Sqrt(gridscript.grid.Length); b++)
+                {
+                    if (b < 5)
+                    {
+                        gridpositionrelativeto = gridscript.grid[c, b].transform.position;
+                        if ((gridp[0] - gridpositionrelativeto).magnitude <= sootherange)
+                        {
+
+                            gridscript.grid[c, b].GetComponent<Renderer>().material.color = Color.cyan;
+
+                        }
+                        else
+                        {
+                            gridscript.grid[c, b].GetComponent<Renderer>().material.color = Color.white;
+                        }
+
+
+
+                    }
+                }
+
+
+
+
+
+
+            }
+            if (Input.GetKeyUp(KeyCode.Mouse0) && phoenixtearselected == true)
+            {
+                if ((gridp[0] - healer.transform.position).magnitude <= phoenixtearrange)
+                {
+                    hstats.Restore(hstats.attack * phoenixtearmultiplier);
+					ptbuffhealer = true;
+                }
+                if ((gridp[0] - cubewarrior.transform.position).magnitude <= phoenixtearrange)
+                {
+                    cwstats.Restore(cwstats.attack * phoenixtearmultiplier);
+					ptbuffcubewarrior = true;
+                }
+                if ((gridp[0] - swordsman.transform.position).magnitude <= phoenixtearrange)
+                {
+                    smstats.Restore(smstats.attack * phoenixtearmultiplier);
+					ptbuffswordsman =true;
+                }
+                if ((gridp[0] - mech.transform.position).magnitude <= phoenixtearrange)
+                {
+                    
+                    mstats.Restore(mstats.attack * phoenixtearmultiplier);
+					ptbuffmech = true;
+                }
+
+
+                CurrentSkillTimes[4] = 0;
+                phoenixtearselected = false;
+				phoenxitearbuffactive = true;
+            }
+
+            gridp.Clear();
+
+        }
+    }
+	bool appliedphoenixtearbuff;
+	void PhoenixTearBuff(){
+	 if (ptbtimer < 10 && appliedphoenixtearbuff == false)
+        {
+            
+                if(ptbuffmech == true){
+				mstats.defense += mdefense/6;
+				}
+				 if(ptbuffswordsman == true){
+				smstats.defense += smdefense/6;
+				}
+				 if(ptbuffcubewarrior == true){
+				cwstats.defense += cwdefense/6;
+				}
+				 if(ptbuffhealer == true){
+				hstats.defense += hdefense/6;
+				}
+            appliedphoenixtearbuff = true;
+            
+        }
+        else if(ptb < 10)
+        {
+
+        }
+        else
+        {
+            hstats.defense = hdefense;
+			cwstats.defense = cwdefense;
+			smstats.defense = smdefense;
+			mstats.defense = mdefense;
+            phoenixtearbuffactive = false;
+            appliedphoenixtearbuff = false;
+            ptbtimer = 0;
+
+        }
+	}
